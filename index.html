@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="editor-container">
+    <div class="controls">
+      <label for="fontSelector">Font Family</label>
+      <select id="fontSelector"></select>
+      <label for="variantSelector">Variant</label>
+      <select id="variantSelector"></select>
+      <label class="toggle-container">
+        <input type="checkbox" id="italicToggle">
+        <span class="slider"></span>
+        Italic
+      </label>
+    </div>
+    <textarea id="textEditor" placeholder="Hello World"></textarea>
+    <div class="actions">
+      <button id="resetButton">Reset</button>
+      <button id="saveButton">Save</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
